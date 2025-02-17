@@ -105,15 +105,25 @@ body {
   font-family: var(--ff);
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 .card {
-  margin: 2em;
-  border: 1px solid black;
-  max-width: 220px;
+  margin: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  border-radius: 3px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card__img__container {
-  height: 160px;
-  background-color: blue;
+  height: 180px;
+  background-color: rgba(0, 0, 255, 0.666);
+  font-size: var(--txt-size-3);
 }
 
 .card__text__header {
@@ -125,6 +135,16 @@ body {
 .card__text__header__name {
   font-size: var(--txt-size-2);
   font-weight: var(--txt-weight-3);
+}
+
+.card__text__header__icons {
+  display: flex;
+  align-items: center;
+}
+
+.card__text__header__icons > img {
+  margin: 0 0.4rem;
+  cursor: pointer;
 }
 
 .card__text__paragraph {
