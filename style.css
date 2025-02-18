@@ -102,10 +102,17 @@ svg {
 
   /* Color */
   --box-shad-1: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  --bg-section-blue: #0a91b1;
+  --bg-section-white: #ffffff;
 }
 
 body {
   font-family: var(--ff);
+  background-color: var(--bg-section-blue);
+}
+
+header {
+  padding: 2rem 0;
 }
 
 .about {
@@ -143,7 +150,8 @@ body {
 .about__info {
   box-shadow: var(--box-shad-1);
   padding: 0.8rem;
-  border-radius: 3px;
+  border-radius: 0 3px 3px 0;
+  background-color: var(--bg-section-white);
 }
 
 .about__info__title {
@@ -168,9 +176,14 @@ body {
   cursor: pointer;
 }
 
+main {
+  background-color: var(--bg-section-white);
+}
+
 .projects {
   max-width: 1080px;
   margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .cards__title {
@@ -196,7 +209,7 @@ body {
 
 .card__img__container {
   height: 180px;
-  background-color: rgba(0, 0, 255, 0.666);
+  background-color: #9e1b1d;
   font-size: var(--txt-size-1);
   font-weight: var(--txt-weight-2);
 }
@@ -226,4 +239,28 @@ body {
   font-size: var(--txt-size-1);
   font-weight: var(--txt-weight-2);
   margin: 0.4rem;
+}
+
+.contact {
+  color: var(--bg-section-white);
+  display: flex;
+  justify-content: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.contact__img__container {
+  flex-basis: 75%;
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  margin: 1.4rem 1.4rem 1.4rem 0;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.contact__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
